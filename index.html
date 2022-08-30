@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Loja</title>
+    <script type='text/javascript' src="main.js"></script>
+
+</head>
+<body page = "lista">
+
+    <div id = "listaRegistro">
+
+        <div style = 'display: flex;'>
+            <input style = 'flex: 1' placeholder = "PESQUIZAR" autofocus id="inputPesquizar" />
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <tH>PRODUTO</th>
+                    <th>CODIGO</th>
+                </tr>
+            </thead>
+            <tbody id="listaRegistroBody"></tbody>
+        </table>
+
+        <div>
+            <button onclick="visualizar ('cdastro', true)">Novo Equipamento</button>
+        </div>
+
+    </div>
+
+    <form id = "cadastroRegistro">
+
+        <div class = "label">
+            <div>ID</div>
+            <div>
+                <input type="number" readonly id="id" />
+            </div>
+        </div>
+
+        <div class = "label">
+            <div>Produto</div>
+            <div>
+                <input id ="produto"/>
+            </div>
+        </div>
+
+        <div class = "label">
+            <div>Codigo</div>
+            <div>
+                <input type = "cod" id="Codigo"/>
+            </div>
+        </div>
+
+        <div>
+            <button>Salva</button>
+            <button onclick="visualizar ('lista')" class="cinza" type="button">Cancelar</button>
+        
+        </div>
+
+    </div>
+    
+</body>
+</html>
